@@ -15,6 +15,12 @@ namespace EmployeeWageCompute
             EmployeeWage employeeWage1 = new EmployeeWage();
             employeeWage1.DailyWages();
 
+           EmployeeWage employeeWage2 = new EmployeeWage();
+            employeeWage2.EmployeeParttime();
+            
+           
+            
+
         }
     }
 }
