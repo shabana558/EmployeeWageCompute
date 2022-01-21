@@ -12,6 +12,8 @@ namespace EmployeeWageCompute
         {
             EmployeeWage employeeWage = new EmployeeWage();
             employeeWage.Attendance();
+            EmployeeWage employeeWage1 = new EmployeeWage();
+            employeeWage1.DailyWages();
 
         }
     }
