@@ -109,8 +109,50 @@ namespace EmployeeWageCompute
             Console.ReadLine();
         }
 
-        
-        
+
+        public void EmployeeWageSwitchcase()
+        {
+            const int FULL_TIME = 1;
+            const int PART_TIME = 2;
+            const int   EMP_RATE_PER_HR = 20;
+            //UC2 check employee present or absent
+            Random random = new Random();
+            int fullTimeEmployee = 1;
+            int partTimeEmployee = 2;
+            //Next method is used for generating random input from 0 to 2.//
+            int randomInput = random.Next(0, 3);
+            int empHrs = 0;
+            int totalWage = 0;
+
+            switch (randomInput)
+            {
+                case FULL_TIME:
+                    //code block
+                    Console.WriteLine("FullTime Employee is present");
+                    //numb of hrs working in a day.
+                    empHrs = 8;
+                    break;
+                    case PART_TIME:
+                    //code block
+                    Console.WriteLine("PartTime Employee is present");
+                    //numb of hrs working in a day.
+                    empHrs = 4;
+                    break;
+                    default:
+                    //code block
+                    Console.WriteLine(" Employee is absent");
+                    //numb of hrs working in a day.
+                    empHrs = 8;
+                    break;
+
+
+            }
+            //formula for calculating employee daily wage
+            totalWage = EMP_RATE_PER_HR * empHrs;
+            Console.WriteLine("Dailywage is:" + totalWage);
+            Console.ReadLine();
+
+        }
 
         
     }
