@@ -46,6 +46,7 @@ namespace EmployeeWageCompute
 
 
                 }
+
                 totalEmpHrs += empHrs;
                 Console.WriteLine("Day#:" + totalWorkingDays + "Emp Hrs :" + empHrs);
 
